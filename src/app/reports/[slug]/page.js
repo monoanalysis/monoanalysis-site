@@ -1,6 +1,7 @@
 import { getAllReportSlugs, getReportBySlug } from '@/lib/reports';
 import Link from 'next/link';
 import PdfButton from '@/components/PdfButton';
+import LinkedInShareButton from '@/components/LinkedInShareButton';
 
 // Generate static paths for all reports
 export async function generateStaticParams() {
@@ -48,8 +49,9 @@ export default async function ReportPage({ params }) {
           <span>Monu</span>
           <span>8 min read</span>
         </div>
-        <div className="no-print">
+        <div className="no-print" style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
           <PdfButton />
+          <LinkedInShareButton />
         </div>
       </div>
 
