@@ -17,14 +17,14 @@ export default function AboutPage() {
           markets today.
         </p>
         <p style={{ fontFamily: 'var(--serif)', fontSize: '1.02rem', lineHeight: 1.85 }}>
-          My first career was in engineering. I spent four years at Reliance Jio
-          building 5G RAN automation systems. Engineering taught me to think in
+          My first career was in engineering. Working at Reliance Jio I
+          built 5G RAN automation systems. Engineering taught me to think in
           systems — how components interact, where bottlenecks form, how small
           failures cascade. That framework translates directly to commodity markets.
         </p>
         <p style={{ fontFamily: 'var(--serif)', fontSize: '1.02rem', lineHeight: 1.85 }}>
           I am currently pursuing a Master of Finance at Babson College, focused on
-          commodity derivatives, energy trading, and portfolio risk. At the 2026
+          commodity, energy, and derivatives markets. At the 2026
           Rotman International Trading Competition, our team placed 13th of 37
           global teams across energy, volatility, and algorithmic trading cases.
         </p>
@@ -35,10 +35,9 @@ export default function AboutPage() {
         <div className="section-label">Analytical Toolkit</div>
         <div className="skills-grid">
           {[
-            { title: 'Quantitative', items: 'Python, NumPy, Pandas, Statsmodels, Matplotlib' },
-            { title: 'Financial Modeling', items: 'Derivatives pricing, BSM, Greeks, Duration/Convexity' },
             { title: 'Markets', items: 'Commodity futures, Options, Basis trading, Spread analysis' },
-            { title: 'Data', items: 'Bloomberg Terminal, EIA data, USDA WASDE, AIS vessel tracking' },
+            { title: 'Risk Management', items: 'Credit, Operational, Liquidity, Regulatory'},
+            { title: 'Data', items: 'Bloomberg Terminal, EIA, FRED, USDA, CFTC' },
           ].map((s, i) => (
             <div className="skill-card" key={i}>
               <h4>{s.title}</h4>
@@ -47,15 +46,16 @@ export default function AboutPage() {
           ))}
         </div>
       </div>
-
+    {/*
       {/* CAREER FOCUS */}
       <div className="credential-box" style={{ marginTop: '2.5rem' }}>
         <p>
-          <strong>Career focus:</strong> Commodity and energy markets — trading,
-          risk management, and structured products. This site is where I publish
+          <strong>Focus:</strong> Commodity and energy markets — trading,
+          risk management, and derivatives products. This site is where I publish
           independent research that reflects how I think about these markets.
         </p>
       </div>
+      
     </div>
   );
 }
