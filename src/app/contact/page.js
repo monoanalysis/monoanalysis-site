@@ -14,7 +14,7 @@ export default function ContactPage() {
         or have feedback on my research? Reach out below or connect on LinkedIn.
       </p>
 
-      <form>
+      <form action="https://formspree.io/f/mkopporj" method="POST">
         <div className="form-group">
           <label className="form-label">Name</label>
           <input type="text" placeholder="Your name" className="form-input" />
