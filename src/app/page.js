@@ -20,9 +20,10 @@ export default function HomePage() {
           <p className="hero-desc">
             Data-driven analysis of energy, agriculture, and global trade flows. 
             Covering cross-commodity relationships, market structure, and price dynamics.
-            
-            Published by Monu Chouhan
           </p>
+          <div>
+            Published by Monu Chouhan
+          </div>
           <div className="hero-stats">
             <div>
               <div className="stat-number">{reports.length}</div>
