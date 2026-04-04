@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         <footer className="footer">
           <span className="footer-text">&copy; 2026 Monu. All rights reserved.</span>
           <div className="footer-links">
-            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/monu-chouhan/" target="_blank" rel="noopener">LinkedIn</a>
             <a href="mailto:monuchouhan833@gmail.com">Email</a>
           </div>
         </footer>
