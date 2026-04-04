@@ -7,7 +7,7 @@ import Link from 'next/link';
 // For client-side filtering, we pass reports as a prop from a server component.
 // This is a simplified version that works with static export.
 
-const TAGS = ['All', 'Oil', 'Gas', 'Agriculture', 'Macro'];
+const TAGS = ['All', 'Oil', 'Gas', 'Agriculture', 'Metals', 'Macro'];
 
 export default function ResearchPageClient({ reports }) {
   const [activeTag, setActiveTag] = useState('All');
