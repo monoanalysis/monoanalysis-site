@@ -11,20 +11,17 @@ export default function HomePage() {
       <header className="hero">
         <div className="hero-grid-overlay" />
         <div className="hero-content">
+          {/* 
           <div className="section-label" style={{ color: '#d4714a', marginBottom: '1.5rem' }}>
             Est. 2026
           </div>
+          */}
           <h1>Independent Commodity Research &amp; Market Insights</h1>
           <p className="hero-desc">
             Data-driven analysis on energy, agriculture, and global trade flows.
-            Published by Monu — Master of Finance candidate focused on commodity
-            derivatives and physical markets.
+            Published by Monu Chouhan
           </p>
           <div className="hero-stats">
-            <div>
-              <div className="stat-number">13th / 37</div>
-              <div className="stat-label">RITC 2026</div>
-            </div>
             <div>
               <div className="stat-number">{reports.length}</div>
               <div className="stat-label">Published Reports</div>
