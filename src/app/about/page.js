@@ -28,7 +28,7 @@ export default function AboutPage() {
             fontSize: '0.95rem', color: 'var(--ink-muted)', lineHeight: 1.7
           }}>
             Monu Chouhan — Master of Finance candidate at Babson College,
-            focused on commodity, energy, and agriculture markets.
+            focused on commodity, energy, and risk management.
           </p>
           <div style={{ display: 'flex', gap: '1.5rem', marginTop: '1rem' }}>
             <a href="https://www.linkedin.com/in/monu-chouhan/" target="_blank" rel="noopener"
@@ -57,10 +57,8 @@ export default function AboutPage() {
           failures cascade. That framework translates directly to commodity markets.
         </p>
         <p style={{ fontFamily: 'var(--serif)', fontSize: '1.02rem', lineHeight: 1.85 }}>
-          I am currently pursuing a Master of Finance at Babson College, focused on
-          commodity derivatives, energy trading, and portfolio risk. At the 2026
-          Rotman International Trading Competition, our team placed 13th of 37
-          global teams across energy, volatility, and algorithmic trading cases.
+          I cover natural gas, crude oil, power markets, agriculture, and metals.
+          This site is where I publish independent research that reflects how I think about these markets.
         </p>
       </div>
 
@@ -81,7 +79,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* CAREER FOCUS */}
+      {/* CAREER FOCUS 
       <div className="credential-box" style={{ marginTop: '2.5rem' }}>
         <p>
           <strong>Focus:</strong> Commodity and energy markets — trading,
@@ -89,6 +87,7 @@ export default function AboutPage() {
           independent research that reflects how I think about these markets.
         </p>
       </div>
+      */}
     </div>
   );
 }
