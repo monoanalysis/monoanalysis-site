@@ -18,7 +18,9 @@ export default function HomePage() {
           */}
           <h1>Independent Commodity Research &amp; Market Insights</h1>
           <p className="hero-desc">
-            Data-driven analysis on energy, agriculture, and global trade flows.
+            Data-driven analysis of energy, agriculture, and global trade flows. 
+            Covering cross-commodity relationships, market structure, and price dynamics.
+            
             Published by Monu Chouhan
           </p>
           <div className="hero-stats">
