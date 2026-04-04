@@ -28,7 +28,7 @@ export default function AboutPage() {
             fontSize: '0.95rem', color: 'var(--ink-muted)', lineHeight: 1.7
           }}>
             Monu Chouhan — Master of Finance candidate at Babson College,
-            focused on commodity derivatives, energy trading, and physical markets.
+            focused on commodity, energy, and agriculture markets.
           </p>
           <div style={{ display: 'flex', gap: '1.5rem', marginTop: '1rem' }}>
             <a href="https://www.linkedin.com/in/monu-chouhan/" target="_blank" rel="noopener"
@@ -69,10 +69,9 @@ export default function AboutPage() {
         <div className="section-label">Analytical Toolkit</div>
         <div className="skills-grid">
           {[
-            { title: 'Quantitative', items: 'Python, NumPy, Pandas, Statsmodels, Matplotlib' },
-            { title: 'Financial Modeling', items: 'Derivatives pricing, BSM, Greeks, Duration/Convexity' },
-            { title: 'Markets', items: 'Commodity futures, Options, Basis trading, Spread analysis' },
-            { title: 'Data', items: 'Bloomberg Terminal, EIA data, USDA WASDE, AIS vessel tracking' },
+             { title: 'Markets', items: 'Commodity futures, Options, Basis trading, Spread analysis' },
+            { title: 'Risk Management', items: 'Credit, Operational, Regulatory, Derivatives' },
+            { title: 'Data', items: 'Bloomberg Terminal, EIA, USDA, FRED, CFTC' },
           ].map((s, i) => (
             <div className="skill-card" key={i}>
               <h4>{s.title}</h4>
@@ -85,8 +84,8 @@ export default function AboutPage() {
       {/* CAREER FOCUS */}
       <div className="credential-box" style={{ marginTop: '2.5rem' }}>
         <p>
-          <strong>Career focus:</strong> Commodity and energy markets — trading,
-          risk management, and structured products. This site is where I publish
+          <strong>Focus:</strong> Commodity and energy markets — trading,
+          risk management, and derivatives products. This site is where I publish
           independent research that reflects how I think about these markets.
         </p>
       </div>
