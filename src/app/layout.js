@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
           <span className="footer-text">&copy; 2026 Monu. All rights reserved.</span>
           <div className="footer-links">
             <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="mailto:monu@example.com">Email</a>
+            <a href="mailto:monuchouhan833@gmail.com">Email</a>
           </div>
         </footer>
       </body>

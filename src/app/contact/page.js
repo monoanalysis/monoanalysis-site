@@ -42,7 +42,7 @@ export default function ContactPage() {
           style={{ fontFamily: 'var(--mono)', fontSize: '0.78rem', color: 'var(--accent)' }}>
           LinkedIn →
         </a>
-        <a href="mailto:monu@example.com"
+        <a href="mailto:monuchouhan833@gmail.com"
           style={{ fontFamily: 'var(--mono)', fontSize: '0.78rem', color: 'var(--accent)' }}>
           Email →
         </a>
