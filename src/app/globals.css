@@ -522,3 +522,76 @@ a { color: inherit; text-decoration: none; }
   .hamburger { display: flex !important; }
   .footer { flex-direction: column; text-align: center; }
 }
+
+/* ─── PRINT / PDF EXPORT ─── */
+.print-only { display: none; }
+
+@media print {
+  /* Hide nav, footer, back button, PDF button */
+  .nav, .footer, .no-print { display: none !important; }
+
+  /* Show print-only elements */
+  .print-only { display: block !important; }
+
+  /* Reset background and colors for clean PDF */
+  body {
+    background: #fff !important;
+    color: #1a1714 !important;
+    font-size: 11pt;
+  }
+
+  .report-content {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .report-content h1 {
+    font-size: 22pt !important;
+    color: #1a1714 !important;
+  }
+
+  .report-subtitle {
+    color: #555 !important;
+  }
+
+  .report-meta span {
+    color: #777 !important;
+  }
+
+  .report-body h2 {
+    color: #b85a38 !important;
+    page-break-after: avoid;
+  }
+
+  .report-body p {
+    color: #1a1714 !important;
+    orphans: 3;
+    widows: 3;
+  }
+
+  .tag {
+    background: #f0f0f0 !important;
+    color: #b85a38 !important;
+    border: 1px solid #ddd;
+  }
+
+  .disclaimer {
+    background: #f9f9f9 !important;
+    border-left-color: #ddd !important;
+  }
+
+  .disclaimer p {
+    color: #999 !important;
+  }
+
+  /* Prevent page breaks inside sections */
+  .report-body h2, .report-body p {
+    page-break-inside: avoid;
+  }
+
+  /* Page margins */
+  @page {
+    margin: 2cm;
+    size: A4;
+  }
+}
