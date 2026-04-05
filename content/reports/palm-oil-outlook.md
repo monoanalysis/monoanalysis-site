@@ -1,6 +1,6 @@
 ---
 title: "Palm Oil: B50 Changes the Balance Sheet"
-subtitle: "Bullish. Target MYR 5,000 by Q3 2026."
+subtitle: "Bullish. Target MYR 5,500 by Q3 2026."
 date: "2026-04-05"
 tags: ["Agriculture"]
 featured: true
@@ -49,7 +49,7 @@ Every tonne diverted to biodiesel is a tonne removed from the export market. Ind
 
 ![Forecast](/images/palm-oil-drivers.png)
 
-**I am bullish. FCPO breaks MYR 5,000 by Q3 2026. Six-month range: MYR 4,750 to 5,050.**
+**I am bullish. FCPO breaks MYR 5,500 by Q3 2026. Six-month range: MYR 4,735 to 5,735.**
 
 **April to June:** The market consolidates between MYR 4,850 and 5400. MPOB March data drops April 10. If stocks come in below 1.6 MT, prices push toward the upper end. Crude oil stays supported above USD 90 on Middle East tensions. The floor holds. This is the accumulation window.
 
