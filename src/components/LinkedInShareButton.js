@@ -34,7 +34,7 @@ export default function LinkedInShareButton() {
         e.target.style.color = 'var(--ink-muted)';
       }}
     >
-      in Share on LinkedIn
+      Share on LinkedIn
     </button>
   );
 }
