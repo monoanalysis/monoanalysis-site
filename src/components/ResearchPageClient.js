@@ -72,7 +72,7 @@ export default function ResearchPageClient({ reports }) {
               </div>
               <div style={{ textAlign: 'right', minWidth: '90px' }}>
                 <div className="card-date">
-                  {new Date(r.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                  {new Date(r.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })}
                 </div>
                 <div style={{
                   fontFamily: 'var(--mono)', fontSize: '0.65rem',
