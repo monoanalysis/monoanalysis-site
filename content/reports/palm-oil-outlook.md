@@ -1,19 +1,19 @@
 ---
 title: "Palm Oil: B50 Changes the Balance Sheet"
 subtitle: "Bullish. Target MYR 5,000 by Q3 2026."
-date: "2026-04-04"
+date: "2026-04-05"
 tags: ["Agriculture"]
 featured: true
-summary: "FCPO is at MYR 4,839. Indonesia just confirmed B50 biodiesel from July 1. The global surplus shrinks to 1.5 MT on an 80 MT market. I am bullish with a Q3 target of MYR 5,000."
+summary: "FCPO is at MYR 4,839. Indonesia just confirmed B50 biodiesel from July 1. The global surplus shrinks to 1.5 MT on an 80 MT market. I am bullish with a Q3 target of MYR 5,500."
 ---
 
 ## The Setup
 
 A month ago, B50 was a rumor. Today it is policy.
 
-On April 1, Indonesia confirmed mandatory B50 biodiesel starting July 1, 2026. Coordinating Minister Airlangga Hartarto tied the decision directly to the Middle East conflict and rising crude prices. The program will cut fossil fuel consumption by 4 million kiloliters per year. Pertamina is ready to blend. The market rallied 18.75% in March on the anticipation alone.
+On April 1, Indonesia confirmed mandatory B50 biodiesel starting July 1, 2026. Coordinating Minister Airlangga Hartarto tied the decision directly to the Middle East conflict and rising crude prices. The program will cut fossil fuel consumption by 4 million kiloliters per year. Pertamina(Indonesian Oil Company) is ready to blend. The market rallied 14.75% in March on the anticipation alone.
 
-FCPO closed at MYR 4,839 on April 3. The 52-week high is MYR 4,918. Indonesia's April CPO reference price came in at USD 989.63/MT, up 5.4% from March.
+FCPO closed at MYR 4,839 on April 3. The 52-week high is MYR 4,839. Indonesia's April CPO reference price came in at USD 989.63/MT, up 5.4% from March.
 
 The question is no longer whether B50 happens. It is whether the supply side can absorb it.
 
@@ -51,9 +51,9 @@ Every tonne diverted to biodiesel is a tonne removed from the export market. Ind
 
 **I am bullish. FCPO breaks MYR 5,000 by Q3 2026. Six-month range: MYR 4,750 to 5,050.**
 
-**April to June:** The market consolidates between MYR 4,750 and 4,950. MPOB March data drops April 10. If stocks come in below 1.6 MT, prices push toward the upper end. Crude oil stays supported above USD 90 on Middle East tensions. The floor holds. This is the accumulation window.
+**April to June:** The market consolidates between MYR 4,850 and 5400. MPOB March data drops April 10. If stocks come in below 1.6 MT, prices push toward the upper end. Crude oil stays supported above USD 90 on Middle East tensions. The floor holds. This is the accumulation window.
 
-**July to September:** B50 goes live. Indonesia's biodiesel program starts pulling an additional 3 to 4 million kiloliters of CPO-based FAME per year. Seasonal production picks up, but the question is whether Indonesian output can simultaneously feed a 50% biodiesel blend and maintain export volumes at anywhere near 2025 levels. I do not think it can. Physical tightness shows up in basis and premiums first, then in the futures curve. FCPO tests MYR 5,000 and holds above it.
+**July to September:** B50 goes live. Indonesia's biodiesel program starts pulling an additional 3 to 4 million kiloliters of CPO-based FAME per year. Seasonal production picks up, but the question is whether Indonesian output can simultaneously feed a 50% biodiesel blend and maintain export volumes at anywhere near 2025 levels. I do not think it can. Physical tightness shows up in basis and premiums first, then in the futures curve. FCPO tests MYR 5,500 and holds above it.
 
-**What breaks the thesis:** B50 gets rolled back to B45 because the infrastructure cannot handle it. Indonesian production normalizes faster than expected. Crude drops below USD 70 on a Middle East ceasefire, undermining biodiesel economics. All three would need to happen simultaneously for prices to pull back below MYR 4,750. Possible but improbable under the current geopolitical backdrop.
+**What breaks the thesis:** B50 gets rolled back to B45 because the infrastructure cannot handle it. Indonesian production normalizes faster than expected. Crude drops below USD 70 on a Middle East ceasefire, undermining biodiesel economics. All three would need to happen simultaneously for prices to pull back below MYR 4,735. Possible but improbable under the current geopolitical backdrop.
 
