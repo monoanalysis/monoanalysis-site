@@ -27,7 +27,7 @@ On paper, production covers demand. USDA's baseline global consumption sits at 7
 
 That is 1.5 MT on an 80 MT market. Essentially nothing.
 
-Three things make even that thin cushion unreliable.
+## Three things make even that thin cushion unreliable.
 
 **First, Indonesia's supply is not as secure as the headline suggests.** The government has seized 3.3 million hectares of plantation land. 1.5 million hectares already went to the state-owned PT Agrinas. Another 1.8 million hectares are under verification. Fastmarkets estimates 2 to 5 MT of production is at risk. State-managed plantations historically see productivity drops of 20 to 30% during ownership transitions. If even the low end of that materializes, 1 MT disappears from the supply side and the surplus flips to deficit.
 
@@ -45,16 +45,6 @@ Indonesia produces 46.7 MT but now consumes 23.3 MT at home. That leaves 23.4 MT
 
 Every tonne diverted to biodiesel is a tonne removed from the export market. India, the EU, and China do not have a substitute at scale. Soy and canola cannot absorb the shortfall without their own prices rising. The tightness in palm does not stay contained. It spreads across the vegetable oil complex.
 
-## The hidden risk
-
-The market has priced in the B50 headline. There is more yet to come.
-
-**Agrinas is a governance risk, not a commodity risk.** The government seized 3.3 million hectares and handed them to a state entity with no track record in plantation management. Nobody knows what productivity looks like under Agrinas in year one. There is no historical precedent for a land transfer of this scale in the palm sector. Analysts are treating it as a tail risk because they cannot model it. That is exactly why it is underpriced.
-
-**B50 infrastructure may not clear.** Indonesia's installed biodiesel capacity is 19.6 million kiloliters. B50 requires 19.7 to 20.1 million kiloliters. Plants operate at 85% utilization due to maintenance. APROBI's secretary general said in December that the country needs an additional 4 million kiloliters of capacity. Only three of five required new plants are under construction. If Jakarta pushes through B50 on a capacity base that cannot physically deliver, the result is either partial implementation or physical tightness severe enough to spike domestic CPO prices and compress export availability further.
-
-Both risks point in the same direction: tighter than the consensus expects.
-
 ## My Call
 
 ![Forecast](/images/palm-oil-drivers.png)
@@ -66,20 +56,4 @@ Both risks point in the same direction: tighter than the consensus expects.
 **July to September:** B50 goes live. Indonesia's biodiesel program starts pulling an additional 3 to 4 million kiloliters of CPO-based FAME per year. Seasonal production picks up, but the question is whether Indonesian output can simultaneously feed a 50% biodiesel blend and maintain export volumes at anywhere near 2025 levels. I do not think it can. Physical tightness shows up in basis and premiums first, then in the futures curve. FCPO tests MYR 5,000 and holds above it.
 
 **What breaks the thesis:** B50 gets rolled back to B45 because the infrastructure cannot handle it. Indonesian production normalizes faster than expected. Crude drops below USD 70 on a Middle East ceasefire, undermining biodiesel economics. All three would need to happen simultaneously for prices to pull back below MYR 4,750. Possible but improbable under the current geopolitical backdrop.
-
-## Dates That Matter
-
-**April 10.** MPOB March data. Watch stocks and production. This sets the tone for Q2.
-
-**July 1.** B50 goes live. The single most important date for CPO in 2026. Watch Pertamina's actual blending volumes in the first two weeks.
-
-**Q3 monthly MPOB reports.** Track whether Malaysian seasonal production ramp offsets the B50 demand pull. If production disappoints, the deficit materializes faster.
-
-**December 2026.** EUDR takes effect. EU import flows shift. Two-tier pricing between EUDR-compliant and non-compliant CPO becomes real.
-
-## Bottom Line
-
-The global surplus narrows to 1.5 MT after adjusting for B50. Indonesia's exportable surplus compresses by roughly 5 MT versus 2025. The headline is priced. The physical tightness in H2 is where the opportunity sits.
-
-FCPO at MYR 4,839 reflects the B50 confirmation but not the supply-side fragility from Agrinas or the infrastructure constraints on biodiesel capacity. If B50 executes and seasonal production comes in at trend, MYR 5,000 is reachable by Q3. The floor is MYR 4,750. The balance of risks leans to the upside, but Q3 production data will be the test.
 
