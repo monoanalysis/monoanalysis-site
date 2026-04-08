@@ -9,7 +9,7 @@ summary: "The April EIA STEO shows a US gas market that is supported but not tig
 
 ## The Setup
 
-The April EIA STEO points to a US gas market that is supported but not tight. The global backdrop is constructive on strong LNG demand, but domestic supply and storage remain comfortable enough to keep a lid on prices through 2026.
+The April EIA STEO(Short term energy outlook) points to a US gas market that is supported but not tight. The global backdrop is constructive on strong LNG demand, but domestic supply and storage remain comfortable enough to keep a lid on prices through 2026.
 
 The bigger story is not 2026, but 2027. EIA has Henry Hub averaging $3.67/MMBtu in 2026 and $3.59 in 2027. On the surface that does not look like a major change. Underneath the averages, 2026 still feels comfortable while 2027 starts to look meaningfully more sensitive.
 
@@ -41,4 +41,3 @@ The most important number in the report is not the annual Henry Hub average. It 
 ## The View
 
 2026 still looks capped. 2027 looks more interesting than the flat headline price forecast suggests. The single variable to watch is how quickly storage stops looking comfortable as LNG growth keeps building.
----
