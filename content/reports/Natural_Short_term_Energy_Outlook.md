@@ -4,7 +4,8 @@ subtitle: "Storage cushion holds the line near term, but LNG growth tightens the
 date: "2026-04-08"
 tags: ["Gas"]
 featured: true
-summary: "The April EIA STEO shows a US gas market that is supported but not tight enough to justify a bullish 2026 view. The bigger story sits in 2027, when storage starts winter lower and LNG demand pulls harder on balances. Henry Hub at $3.67 in 2026 and $3.59 in 2027 hides what is really going on underneath."
+summary: "The April EIA STEO supports a neutral 2026 view but a constructive 2027 setup. Storage is the cushion now. LNG growth is what tightens it later."
+
 ---
 
 ## The Setup
@@ -18,6 +19,8 @@ The bigger story is not 2026, but 2027. EIA has Henry Hub averaging $3.67/MMBtu 
 ## Storage Is the Cushion
 
 Storage is the main reason for caution near term. The withdrawal season ended at around 1,900 Bcf, slightly above the five-year average. EIA projects storage ending October 2026 at about 4,015 Bcf, or 6% above normal. A market with that kind of cushion struggles to sustain sharp upside unless weather turns extreme.
+
+The most important number in the report is not the annual Henry Hub average. It is the October 2027 storage level of nearly 3,800 Bcf, which EIA flags as the lowest pre-winter level since 2022. Once storage starts winter lower and LNG demand is structurally higher, the market can reprice much faster on weather or outages.
 
 ![Placeholder: US natural gas storage vs 5-year average](/images/Us_working_gas_storage.jpg)
 
@@ -33,11 +36,6 @@ The report becomes more interesting on the LNG side. US LNG exports are forecast
 
 ![Placeholder: US LNG export growth chart](/images/Natural_gas_annual_trade.jpg)
 
-## The Number That Matters
-
-The most important number in the report is not the annual Henry Hub average. It is the October 2027 storage level of nearly 3,800 Bcf, which EIA flags as the lowest pre-winter level since 2022. Once storage starts winter lower and LNG demand is structurally higher, the market can reprice much faster on weather or outages.
-
-
 ## The View
 
-2026 still looks capped. 2027 looks more interesting than the flat headline price forecast suggests. The single variable to watch is how quickly storage stops looking comfortable as LNG growth keeps building.
+Stay neutral on 2026, constructive on 2027. The front of the curve is fairly priced for a market with this much storage and supply growth. The back of the curve underprices the LNG pull and the thinner storage cushion heading into winter 2027-28. The trade is calendar spread.
