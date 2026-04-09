@@ -1,6 +1,7 @@
 import './globals.css';
 import Link from 'next/link';
 import Script from 'next/script';
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: 'Monu | Commodity Markets Analysis',
@@ -41,6 +42,9 @@ export default function RootLayout({ children }) {
         </nav>
 
         {children}
+        
+        {/* Vercel Analytics */}
+        <Analytics />
 
         {/* FOOTER */}
         <footer className="footer">
