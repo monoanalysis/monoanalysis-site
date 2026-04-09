@@ -1,7 +1,6 @@
 import './globals.css';
 import Link from 'next/link';
 import Script from 'next/script';
-import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: 'Monu | Commodity Markets Analysis',
@@ -27,6 +26,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body>
+        {/* NAV */}
         <nav className="nav">
           <div className="nav-inner">
             <Link href="/" className="logo">
@@ -42,8 +42,7 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        <Analytics />
-
+        {/* FOOTER */}
         <footer className="footer">
           <span className="footer-text">&copy; 2026 Monu. All rights reserved.</span>
           <div className="footer-links">
