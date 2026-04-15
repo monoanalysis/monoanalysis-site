@@ -66,7 +66,7 @@ Qatar halted LNG production after Iranian drone strikes in early March. Goldman 
 
 The problem is structural, not uniform. Spain holds 40% of total EU LNG regasification capacity and sits at 60.2% storage fill. The Netherlands is at 5.5%. That nine-to-one divergence between two major EU economies is not a rounding error. Northern European countries that historically relied on Russian pipeline volumes and have limited regasification infrastructure are the most exposed if Qatari LNG stays offline through May.
 
-<div style="margin:28px 0;font-family:Arial,sans-serif;">
+<div style="margin:28px 0 48px;font-family:Arial,sans-serif;">
 <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:#1C2B3A;margin-bottom:3px;">TTF Natural Gas EU — Annotated Price Path (EUR/MWh)</div>
 <div style="font-size:10.5px;color:#8C9BAA;margin-bottom:10px;">Nov 2025–Apr 14, 2026 · Source: Google Finance. Annotations: Goldman Sachs, CNBC, Reuters.</div>
 <div style="display:flex;gap:20px;margin-bottom:10px;flex-wrap:wrap;">
@@ -122,7 +122,7 @@ The problem is structural, not uniform. Spain holds 40% of total EU LNG regasifi
 <text x="206" y="372" fill="#8C9BAA" font-size="7.5" font-family="Arial">mid-Dec 2025</text>
 </svg>
 </div>
-<div style="font-size:9.5px;color:#B0BBC6;line-height:1.6;margin-top:10px;">Price path: Google Finance 6M chart, Natural Gas EU (EUR/MWh), as of Apr 14 2026. Pre-crisis baseline €33.5 = Nov 1 2025 opening level. Qatar halt Mar 3: GS estimated −19% near-term global LNG supply. €63 peak confirmed via CNBC. US blockade declared Apr 12 after Iran-US talks collapsed. GS revised Apr-26 TTF forecast €55/MWh published Mar 3 2026. Current close €43.37, −6.57% on day.</div>
+<div style="font-size:9.5px;color:#B0BBC6;line-height:1.6;margin-top:16px;padding-bottom:8px;">Price path: Google Finance 6M chart, Natural Gas EU (EUR/MWh), as of Apr 14 2026. Pre-crisis baseline €33.5 = Nov 1 2025 opening level. Qatar halt Mar 3: GS estimated −19% near-term global LNG supply. €63 peak confirmed via CNBC. US blockade declared Apr 12 after Iran-US talks collapsed. GS revised Apr-26 TTF forecast €55/MWh published Mar 3 2026. Current close €43.37, −6.57% on day.</div>
 </div>
 
 ## The View
