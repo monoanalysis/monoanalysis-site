@@ -2,35 +2,48 @@
 
 import { useEffect, useRef } from 'react';
 
-// React's dangerouslySetInnerHTML never executes <script> tags.
-// This component re-creates and appends every script found in the HTML
-// after the content mounts — fixing charts that only show on hard reload.
+function loadScript(src) {
+  return new Promise((resolve, reject) => {
+    // If already loaded, resolve immediately
+    if (document.querySelector(`script[src="${src}"]`)) {
+      resolve();
+      return;
+    }
+    const s = document.createElement('script');
+    s.src = src;
+    s.onload = resolve;
+    s.onerror = reject;
+    document.head.appendChild(s);
+  });
+}
+
+async function executeScripts(container) {
+  const scripts = Array.from(container.querySelectorAll('script'));
+
+  // Separate external (src) scripts from inline scripts
+  const externalScripts = scripts.filter(s => s.src);
+  const inlineScripts = scripts.filter(s => !s.src);
+
+  // Load all external scripts first (in order), waiting for each
+  for (const s of externalScripts) {
+    await loadScript(s.src);
+  }
+
+  // Then execute all inline scripts
+  for (const s of inlineScripts) {
+    const newScript = document.createElement('script');
+    newScript.textContent = s.textContent;
+    s.parentNode.replaceChild(newScript, s);
+  }
+}
+
 export default function ReportBody({ html }) {
   const ref = useRef(null);
 
   useEffect(() => {
     if (!ref.current) return;
-
-    const container = ref.current;
-
-    // Find all <script> elements injected via innerHTML
-    const scripts = Array.from(container.querySelectorAll('script'));
-
-    scripts.forEach(oldScript => {
-      const newScript = document.createElement('script');
-
-      // Copy all attributes (src, type, etc.)
-      Array.from(oldScript.attributes).forEach(attr => {
-        newScript.setAttribute(attr.name, attr.value);
-      });
-
-      // Copy inline script content
-      newScript.textContent = oldScript.textContent;
-
-      // Replace old (inert) script with the new executable one
-      oldScript.parentNode.replaceChild(newScript, oldScript);
-    });
-  }, [html]); // re-run if the report content changes
+    executeScripts(ref.current);
+  }, [html]);
 
   return (
     <div
