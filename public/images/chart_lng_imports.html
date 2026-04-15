@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EU LNG Imports</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #fff; }
+  .chart-wrap { width: 720px; background: #fff; padding: 28px 32px 20px; font-family: 'Arial', sans-serif; }
+  .chart-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.4px; color: #1C2B3A; margin-bottom: 3px; }
+  .chart-sub { font-size: 11px; color: #8C9BAA; margin-bottom: 18px; }
+  .legend-row { display: flex; gap: 20px; margin-bottom: 14px; }
+  .leg { display: flex; align-items: center; gap: 6px; font-size: 11px; color: #4A5568; }
+  .leg-swatch { width: 12px; height: 12px; border-radius: 2px; flex-shrink: 0; }
+  .chart-note { font-size: 10px; color: #B0BBC6; margin-top: 14px; line-height: 1.5; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+<div class="chart-wrap">
+  <div class="chart-title">EU LNG Import Forecast by Region — 2025 vs 2026 (mt)</div>
+  <div class="chart-sub">Million tonnes &nbsp;·&nbsp; Source: Kpler European Natural Gas Outlook, Dec 2025</div>
+  <div class="legend-row">
+    <div class="leg"><div class="leg-swatch" style="background:#8AAEC8"></div>2025 Actual</div>
+    <div class="leg"><div class="leg-swatch" style="background:#1C2B3A"></div>2026 Forecast</div>
+  </div>
+  <canvas id="c2" width="656" height="270"></canvas>
+  <div class="chart-note">
+    2025 actuals from Kpler: NW Europe 57.1 mt, Southern Europe 27.6 mt, Rest of EU-27 13.4 mt, UK &amp; Turkey 21.5 mt. Total 127 mt.
+    2026 forecasts: NW Europe 73.6 mt (+29% YoY), Southern Europe 34.6 mt (+25%), Rest of EU-27 15.0 mt (+12%), UK &amp; Turkey 19.5 mt (-9%). Total 145 mt. 2026 figures are Kpler modelled forecasts pre-Hormuz disruption — subject to downward revision if Qatar LNG remains offline.
+  </div>
+</div>
+<script>
+// Palette aligned: steel blue (2025 actual) / slate navy (2026 forecast)
+const ctx = document.getElementById('c2').getContext('2d');
+const labels = ['NW Europe', 'Southern Europe', 'Rest of EU-27', 'UK & Turkey'];
+
+// VERIFIED from Kpler Dec 2025 report — corrected from prior version
+const data25 = [57.1, 27.6, 13.4, 21.5];
+const data26 = [73.6, 34.6, 15.0, 19.5];
+
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels,
+    datasets: [
+      {
+        label: '2025 Actual',
+        data: data25,
+        backgroundColor: '#8AAEC8',
+        borderWidth: 0,
+        borderRadius: 3,
+        categoryPercentage: 0.68,
+        barPercentage: 0.46
+      },
+      {
+        label: '2026 Forecast',
+        data: data26,
+        backgroundColor: '#1C2B3A',
+        borderWidth: 0,
+        borderRadius: 3,
+        categoryPercentage: 0.68,
+        barPercentage: 0.46
+      }
+    ]
+  },
+  options: {
+    responsive: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        backgroundColor: '#1C2B3A',
+        titleColor: '#fff',
+        bodyColor: '#A8B8C8',
+        padding: 10,
+        callbacks: {
+          label: c => ` ${c.dataset.label}: ${c.parsed.y} mt`,
+          afterLabel: c => {
+            if (c.datasetIndex === 1) {
+              const pct = (((c.parsed.y - data25[c.dataIndex]) / data25[c.dataIndex]) * 100).toFixed(1);
+              return ` YoY: +${pct}%`;
+            }
+            return '';
+          }
+        }
+      }
+    },
+    scales: {
+      y: {
+        ticks: {
+          callback: v => v + ' mt',
+          font: { size: 11 },
+          color: '#8C9BAA',
+          stepSize: 20
+        },
+        grid: { color: '#F0F3F6' },
+        border: { display: false }
+      },
+      x: {
+        grid: { display: false },
+        ticks: { font: { size: 11 }, color: '#1C2B3A' },
+        border: { display: false }
+      }
+    }
+  }
+});
+</script>
+</body>
+</html>

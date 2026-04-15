@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TTF Price — Annotated</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #fff; font-family: 'Arial', sans-serif; }
+
+  .outer {
+    width: 760px;
+    padding: 24px 0 20px;
+  }
+
+  .header { padding: 0 32px; margin-bottom: 10px; }
+  .chart-title {
+    font-size: 11.5px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1.5px;
+    color: #1C2B3A; margin-bottom: 3px;
+  }
+  .chart-sub { font-size: 10.5px; color: #8C9BAA; margin-bottom: 10px; }
+
+  .legend-row {
+    display: flex; gap: 20px;
+    padding: 0 32px; margin-bottom: 10px;
+  }
+  .leg { display: flex; align-items: center; gap: 6px; font-size: 10px; color: #4A5568; }
+
+  /* The chart container holds the screenshot + overlay SVG stacked */
+  .chart-container {
+    position: relative;
+    width: 760px;
+    height: 430px; /* matches screenshot proportions */
+  }
+
+  .chart-container img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: block;
+  }
+
+  .chart-container svg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    overflow: visible;
+  }
+
+  .chart-note {
+    font-size: 9.5px; color: #B0BBC6;
+    line-height: 1.6; padding: 10px 32px 0;
+  }
+</style>
+</head>
+<body>
+<div class="outer">
+
+  <div class="header">
+    <div class="chart-title">TTF Natural Gas EU — Annotated Price Path (EUR/MWh)</div>
+    <div class="chart-sub">Nov 2025–Apr 14, 2026 &nbsp;·&nbsp; Source: Google Finance. Annotations: Goldman Sachs, CNBC, Reuters.</div>
+  </div>
+
+  <div class="legend-row">
+    <div class="leg">
+      <svg width="22" height="10">
+        <line x1="0" y1="5" x2="22" y2="5" stroke="#8AAEC8" stroke-width="1.5" stroke-dasharray="6 4"/>
+      </svg>
+      Pre-crisis baseline (€33.5)
+    </div>
+    <div class="leg">
+      <svg width="10" height="10">
+        <polygon points="5,0 10,10 0,10" fill="#B03A2E"/>
+      </svg>
+      Goldman Sachs Apr-26 forecast (€55)
+    </div>
+  </div>
+
+  <div class="chart-container">
+    <!--
+      The screenshot image. For deployment, replace src with your actual hosted image path.
+      e.g. src="/images/ttf_screenshot.png"
+    -->
+    <img src="ttf_screenshot.png" alt="TTF 6M price chart" />
+
+    <!--
+      Overlay SVG — coordinate system matches the screenshot pixel space.
+      Screenshot chart area (inside axes):
+        Left edge (Nov 1):  x ≈ 68px  (out of 760)
+        Right edge (Apr 14): x ≈ 710px
+        Top edge (€65):     y ≈ 68px  (out of 430)
+        Bottom edge (€25):  y ≈ 390px
+
+      So:
+        xScale: date → px:  68 + (daysSinceNov1 / 165) * 642
+        yScale: price → px: 68 + ((65 - price) / 40) * 322
+    -->
+    <svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg">
+
+      <!-- ── coordinate helpers (not visible) ──
+           x(date):  68 + ( (date - Nov1) / (Apr17-Nov1) ) * 642
+           y(price): 68 + ( (65 - price) / 40 ) * 322
+           Nov1  = day 0
+           Dec1  = day 30  → x=185
+           Jan1  = day 61  → x=306
+           Feb1  = day 92  → x=427
+           Mar1  = day 120 → x=535
+           Mar3  = day 122 → x=543
+           Apr1  = day 151 → x=651
+           Apr12 = day 162 → x=694
+           Apr14 = day 164 → x=700
+
+           y(65)=68, y(60)=108, y(55)=148, y(50)=189,
+           y(45)=229, y(43.37)=242, y(40)=270, y(35)=310, y(33.5)=322, y(30)=350, y(25)=390
+      -->
+
+      <!-- ── PRE-CRISIS BASELINE €33.5 ── -->
+      <!-- y(33.5) = 68 + (65-33.5)/40 * 322 = 68 + 254 = 322 -->
+      <line x1="68" y1="322" x2="710" y2="322"
+            stroke="#8AAEC8" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.9"/>
+      <rect x="70" y="308" width="118" height="16" rx="2" fill="rgba(138,174,200,0.15)"/>
+      <text x="74" y="320" fill="#8AAEC8" font-size="9.5" font-family="Arial" font-weight="700">
+        Pre-crisis baseline  €33.5
+      </text>
+
+      <!-- ── EVENT 1: Qatar LNG halt — Mar 3 ── -->
+      <!-- x(Mar3)=543, price jumped from ~33 to ~57 so dot at y(57)=148-16=132 approx -->
+      <!-- y(57) = 68 + (65-57)/40*322 = 68+64.4 = 132 -->
+      <line x1="543" y1="68" x2="543" y2="390"
+            stroke="rgba(176,58,46,0.35)" stroke-width="1" stroke-dasharray="3 4"/>
+      <circle cx="543" cy="197" r="5" fill="#B03A2E" stroke="#fff" stroke-width="1.5"/>
+      <!-- y(50) = 189 — the price just before the spike started visually -->
+      <rect x="549" y="72" width="110" height="32" rx="2" fill="#B03A2E"/>
+      <text x="554" y="84" fill="#fff" font-size="8" font-family="Arial" font-weight="700"
+            text-rendering="geometricPrecision">QATAR LNG HALT</text>
+      <text x="554" y="96" fill="rgba(255,255,255,0.8)" font-size="8" font-family="Arial">Mar 3, 2026</text>
+      <text x="554" y="107" fill="rgba(255,255,255,0.7)" font-size="7.5" font-family="Arial">GS: −19% global LNG supply</text>
+
+      <!-- ── PEAK LABEL €63 ── -->
+      <!-- x(Mar6)≈551, y(63)=68+(65-63)/40*322=68+16=84 -->
+      <circle cx="565" cy="104" r="3.5" fill="#B03A2E" stroke="#fff" stroke-width="1.5"/>
+      <text x="570" y="101" fill="#B03A2E" font-size="9" font-family="Arial" font-weight="700">€63 peak</text>
+
+      <!-- ── EVENT 2: US Naval Blockade — Apr 12 ── -->
+      <!-- x(Apr12)=694, y(46.2)=68+(65-46.2)/40*322=68+151=219 -->
+      <line x1="694" y1="68" x2="694" y2="390"
+            stroke="rgba(176,58,46,0.35)" stroke-width="1" stroke-dasharray="3 4"/>
+      <circle cx="694" cy="222" r="5" fill="#B03A2E" stroke="#fff" stroke-width="1.5"/>
+      <rect x="570" y="230" width="118" height="32" rx="2" fill="#B03A2E"/>
+      <text x="575" y="242" fill="#fff" font-size="8" font-family="Arial" font-weight="700"
+            text-rendering="geometricPrecision">US NAVAL BLOCKADE</text>
+      <text x="575" y="254" fill="rgba(255,255,255,0.8)" font-size="8" font-family="Arial">Apr 12, 2026</text>
+      <line x1="688" y1="244" x2="690" y2="244"
+            stroke="#B03A2E" stroke-width="1"/>
+
+      <!-- ── GS FORECAST TRIANGLE at Apr 14 ── -->
+      <!-- x(Apr14)=700, y(55)=148 -->
+      <!-- triangle pointing up at 700,148 -->
+      <polygon points="700,136 707,152 693,152" fill="#B03A2E" opacity="0.9"/>
+      <rect x="615" y="153" width="80" height="30" rx="2" fill="#B03A2E"/>
+      <text x="620" y="165" fill="#fff" font-size="8" font-family="Arial" font-weight="700">GS FORECAST</text>
+      <text x="620" y="177" fill="rgba(255,255,255,0.9)" font-size="9" font-family="Arial" font-weight="700">€55 / MWh</text>
+      <line x1="700" y1="152" x2="700" y2="153" stroke="#B03A2E" stroke-width="1"/>
+
+      <!-- ── CURRENT PRICE PILL — Apr 14 €43.37 ── -->
+      <!-- x(Apr14)=700, y(43.37)=68+(65-43.37)/40*322=68+174=242 -->
+      <rect x="638" y="233" width="58" height="20" rx="2" fill="#1C2B3A"/>
+      <text x="667" y="247" fill="#fff" font-size="10" font-family="Arial" font-weight="700"
+            text-anchor="middle">€43.37</text>
+      <line x1="696" y1="243" x2="700" y2="243"
+            stroke="#1C2B3A" stroke-width="1" stroke-dasharray="2 2"/>
+
+      <!-- ── MID-DEC TROUGH LABEL ── -->
+      <!-- x(Dec18)=68+(47/165)*642=68+183=251, y(27.3)=68+(65-27.3)/40*322=68+303=371 -->
+      <circle cx="251" cy="371" r="3.5" fill="#1C2B3A" stroke="#fff" stroke-width="1.5"/>
+      <text x="206" y="368" fill="#1C2B3A" font-size="8.5" font-family="Arial" font-weight="700">€27 trough</text>
+      <text x="206" y="378" fill="#8C9BAA" font-size="7.5" font-family="Arial">mid-Dec 2025</text>
+
+    </svg>
+  </div>
+
+  <div class="chart-note">
+    Price path: Google Finance 6M chart, Natural Gas EU (EUR/MWh), as of Apr 14 2026. Pre-crisis baseline €33.5 = Nov 1 2025 opening level per chart. Qatar halt Mar 3: Goldman Sachs estimated −19% near-term global LNG supply. €63 peak confirmed via CNBC. US blockade declared Apr 12 after Iran-US talks collapsed (Reuters / JD Vance). GS revised Apr-26 TTF forecast €55/MWh, published Mar 3 2026. Current close €43.37, −6.57% on day.
+  </div>
+
+</div>
+</body>
+</html>
