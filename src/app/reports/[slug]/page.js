@@ -2,6 +2,7 @@ import { getAllReportSlugs, getReportBySlug } from '@/lib/reports';
 import Link from 'next/link';
 import PdfButton from '@/components/PdfButton';
 import LinkedInShareButton from '@/components/LinkedInShareButton';
+import ReportBody from '@/components/ReportBody';
 
 // Generate static paths for all reports
 export async function generateStaticParams() {
@@ -56,10 +57,7 @@ export default async function ReportPage({ params }) {
       </div>
 
       {/* BODY (rendered from markdown) */}
-      <div
-        className="report-body"
-        dangerouslySetInnerHTML={{ __html: report.contentHtml }}
-      />
+      <ReportBody html={report.contentHtml} />
 
       {/* DISCLAIMER */}
       <div className="disclaimer">
