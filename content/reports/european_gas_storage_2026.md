@@ -93,21 +93,20 @@ The problem is structural, not uniform. Spain holds 40% of total EU LNG regasifi
 <!-- US Naval Blockade — Apr 12 — vertical rule at x=694 -->
 <line x1="694" y1="90" x2="694" y2="390" stroke="rgba(176,58,46,0.35)" stroke-width="1" stroke-dasharray="3 4"/>
 <circle cx="694" cy="222" r="5" fill="#B03A2E" stroke="#fff" stroke-width="1.5"/>
-<!-- Blockade box: anchored left of the vertical rule, below the Qatar box -->
-<rect x="545" y="270" width="140" height="32" rx="2" fill="#B03A2E"/>
-<text x="551" y="283" fill="#fff" font-size="8" font-family="Arial" font-weight="700">US NAVAL BLOCKADE</text>
-<text x="551" y="295" fill="rgba(255,255,255,0.8)" font-size="8" font-family="Arial">Apr 12, 2026</text>
-<!-- connector line from blockade box to dot -->
-<line x1="685" y1="270" x2="694" y2="230" stroke="#B03A2E" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.6"/>
-<!-- GS Forecast triangle + box — placed upper-left of Apr 14 endpoint, clear of blockade box -->
-<!-- Triangle at x=700, y(55)=148 pointing up -->
+<!-- Blockade box: anchored well left, mid-chart, connected by line to dot -->
+<rect x="430" y="290" width="140" height="32" rx="2" fill="#B03A2E"/>
+<text x="436" y="303" fill="#fff" font-size="8" font-family="Arial" font-weight="700">US NAVAL BLOCKADE</text>
+<text x="436" y="315" fill="rgba(255,255,255,0.8)" font-size="8" font-family="Arial">Apr 12, 2026</text>
+<!-- connector line from blockade box top-right corner to dot -->
+<line x1="570" y1="290" x2="694" y2="225" stroke="#B03A2E" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.7"/>
+<!-- GS Forecast triangle at Apr 14, y(55)=148 -->
 <polygon points="700,140 707,156 693,156" fill="#B03A2E" opacity="0.9"/>
-<!-- GS box anchored to the left, well above the blockade box -->
-<rect x="548" y="158" width="86" height="30" rx="2" fill="#B03A2E"/>
-<text x="554" y="170" fill="#fff" font-size="8" font-family="Arial" font-weight="700">GS FORECAST</text>
-<text x="554" y="182" fill="rgba(255,255,255,0.9)" font-size="9" font-family="Arial" font-weight="700">€55 / MWh</text>
-<!-- connector line from GS box to triangle -->
-<line x1="634" y1="173" x2="700" y2="156" stroke="#B03A2E" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.6"/>
+<!-- GS box anchored left, clearly above blockade box -->
+<rect x="430" y="195" width="86" height="30" rx="2" fill="#B03A2E"/>
+<text x="436" y="207" fill="#fff" font-size="8" font-family="Arial" font-weight="700">GS FORECAST</text>
+<text x="436" y="219" fill="rgba(255,255,255,0.9)" font-size="9" font-family="Arial" font-weight="700">€55 / MWh</text>
+<!-- connector line from GS box right edge to triangle base -->
+<line x1="516" y1="210" x2="693" y2="156" stroke="#B03A2E" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.7"/>
 <!-- Current price pill €43.37 — x=700, y(43.37)=242 — placed left of blockade area -->
 <rect x="68" y="228" width="64" height="20" rx="2" fill="#1C2B3A"/>
 <text x="100" y="242" fill="#fff" font-size="10" font-family="Arial" font-weight="700" text-anchor="middle">€43.37</text>
