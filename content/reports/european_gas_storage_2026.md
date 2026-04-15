@@ -73,34 +73,53 @@ The problem is structural, not uniform. Spain holds 40% of total EU LNG regasifi
 <div style="display:flex;align-items:center;gap:6px;font-size:10px;color:#4A5568;"><svg width="22" height="10"><line x1="0" y1="5" x2="22" y2="5" stroke="#8AAEC8" stroke-width="1.5" stroke-dasharray="6 4"/></svg>Pre-crisis baseline (€33.5)</div>
 <div style="display:flex;align-items:center;gap:6px;font-size:10px;color:#4A5568;"><svg width="10" height="10"><polygon points="5,0 10,10 0,10" fill="#B03A2E"/></svg>Goldman Sachs Apr-26 forecast (€55)</div>
 </div>
-<div style="position:relative;width:760px;height:430px;">
+<div style="position:relative;width:100%;max-width:760px;height:430px;">
 <img src="/images/ttf_screenshot.png" alt="TTF 6M price chart" style="position:absolute;top:0;left:0;width:100%;height:100%;display:block;" />
 <svg viewBox="0 0 760 430" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:100%;overflow:visible;">
+<!-- Pre-crisis baseline €33.5 — y(33.5)=322 -->
 <line x1="68" y1="322" x2="710" y2="322" stroke="#8AAEC8" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.9"/>
 <rect x="70" y="308" width="118" height="16" rx="2" fill="rgba(138,174,200,0.15)"/>
 <text x="74" y="320" fill="#8AAEC8" font-size="9.5" font-family="Arial" font-weight="700">Pre-crisis baseline  €33.5</text>
-<line x1="543" y1="68" x2="543" y2="390" stroke="rgba(176,58,46,0.35)" stroke-width="1" stroke-dasharray="3 4"/>
+<!-- Qatar LNG halt — Mar 3 — vertical rule at x=543 -->
+<line x1="543" y1="90" x2="543" y2="390" stroke="rgba(176,58,46,0.35)" stroke-width="1" stroke-dasharray="3 4"/>
 <circle cx="543" cy="197" r="5" fill="#B03A2E" stroke="#fff" stroke-width="1.5"/>
-<rect x="549" y="72" width="110" height="32" rx="2" fill="#B03A2E"/>
-<text x="554" y="84" fill="#fff" font-size="8" font-family="Arial" font-weight="700">QATAR LNG HALT</text>
-<text x="554" y="96" fill="rgba(255,255,255,0.8)" font-size="8" font-family="Arial">Mar 3, 2026</text>
-<text x="554" y="107" fill="rgba(255,255,255,0.7)" font-size="7.5" font-family="Arial">GS: −19% global LNG supply</text>
-<circle cx="565" cy="104" r="3.5" fill="#B03A2E" stroke="#fff" stroke-width="1.5"/>
-<text x="570" y="101" fill="#B03A2E" font-size="9" font-family="Arial" font-weight="700">€63 peak</text>
-<line x1="694" y1="68" x2="694" y2="390" stroke="rgba(176,58,46,0.35)" stroke-width="1" stroke-dasharray="3 4"/>
+<!-- Qatar box anchored left of the vertical rule so it doesn't bleed off the right -->
+<rect x="390" y="93" width="148" height="46" rx="2" fill="#B03A2E"/>
+<text x="396" y="107" fill="#fff" font-size="8" font-family="Arial" font-weight="700">QATAR LNG HALT  —  Mar 3, 2026</text>
+<text x="396" y="119" fill="rgba(255,255,255,0.8)" font-size="7.5" font-family="Arial">GS: −19% global LNG supply</text>
+<text x="396" y="131" fill="rgba(255,255,255,0.7)" font-size="7.5" font-family="Arial">TTF spike to €63 peak</text>
+<!-- connector line from box right edge to vertical rule -->
+<line x1="538" y1="116" x2="543" y2="197" stroke="#B03A2E" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.6"/>
+<!-- €63 peak dot — x≈558, y(63)=84 -->
+<circle cx="558" cy="88" r="3.5" fill="#B03A2E" stroke="#fff" stroke-width="1.5"/>
+<!-- US Naval Blockade — Apr 12 — vertical rule at x=694 -->
+<line x1="694" y1="90" x2="694" y2="390" stroke="rgba(176,58,46,0.35)" stroke-width="1" stroke-dasharray="3 4"/>
 <circle cx="694" cy="222" r="5" fill="#B03A2E" stroke="#fff" stroke-width="1.5"/>
-<rect x="570" y="230" width="118" height="32" rx="2" fill="#B03A2E"/>
-<text x="575" y="242" fill="#fff" font-size="8" font-family="Arial" font-weight="700">US NAVAL BLOCKADE</text>
-<text x="575" y="254" fill="rgba(255,255,255,0.8)" font-size="8" font-family="Arial">Apr 12, 2026</text>
-<polygon points="700,136 707,152 693,152" fill="#B03A2E" opacity="0.9"/>
-<rect x="615" y="153" width="80" height="30" rx="2" fill="#B03A2E"/>
-<text x="620" y="165" fill="#fff" font-size="8" font-family="Arial" font-weight="700">GS FORECAST</text>
-<text x="620" y="177" fill="rgba(255,255,255,0.9)" font-size="9" font-family="Arial" font-weight="700">€55 / MWh</text>
-<rect x="638" y="233" width="58" height="20" rx="2" fill="#1C2B3A"/>
-<text x="667" y="247" fill="#fff" font-size="10" font-family="Arial" font-weight="700" text-anchor="middle">€43.37</text>
+<!-- Blockade box: anchored left of the vertical rule, below the Qatar box -->
+<rect x="545" y="270" width="140" height="32" rx="2" fill="#B03A2E"/>
+<text x="551" y="283" fill="#fff" font-size="8" font-family="Arial" font-weight="700">US NAVAL BLOCKADE</text>
+<text x="551" y="295" fill="rgba(255,255,255,0.8)" font-size="8" font-family="Arial">Apr 12, 2026</text>
+<!-- connector line from blockade box to dot -->
+<line x1="685" y1="270" x2="694" y2="230" stroke="#B03A2E" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.6"/>
+<!-- GS Forecast triangle + box — placed upper-left of Apr 14 endpoint, clear of blockade box -->
+<!-- Triangle at x=700, y(55)=148 pointing up -->
+<polygon points="700,140 707,156 693,156" fill="#B03A2E" opacity="0.9"/>
+<!-- GS box anchored to the left, well above the blockade box -->
+<rect x="548" y="158" width="86" height="30" rx="2" fill="#B03A2E"/>
+<text x="554" y="170" fill="#fff" font-size="8" font-family="Arial" font-weight="700">GS FORECAST</text>
+<text x="554" y="182" fill="rgba(255,255,255,0.9)" font-size="9" font-family="Arial" font-weight="700">€55 / MWh</text>
+<!-- connector line from GS box to triangle -->
+<line x1="634" y1="173" x2="700" y2="156" stroke="#B03A2E" stroke-width="0.8" stroke-dasharray="2 3" opacity="0.6"/>
+<!-- Current price pill €43.37 — x=700, y(43.37)=242 — placed left of blockade area -->
+<rect x="68" y="228" width="64" height="20" rx="2" fill="#1C2B3A"/>
+<text x="100" y="242" fill="#fff" font-size="10" font-family="Arial" font-weight="700" text-anchor="middle">€43.37</text>
+<text x="135" y="241" fill="#1C2B3A" font-size="8" font-family="Arial">close Apr 14</text>
+<!-- horizontal dotted line from pill to current position -->
+<line x1="132" y1="238" x2="700" y2="242" stroke="#1C2B3A" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.4"/>
+<!-- Mid-Dec trough — x=251, y(27)=371 -->
 <circle cx="251" cy="371" r="3.5" fill="#1C2B3A" stroke="#fff" stroke-width="1.5"/>
-<text x="206" y="368" fill="#1C2B3A" font-size="8.5" font-family="Arial" font-weight="700">€27 trough</text>
-<text x="206" y="378" fill="#8C9BAA" font-size="7.5" font-family="Arial">mid-Dec 2025</text>
+<text x="206" y="362" fill="#1C2B3A" font-size="8.5" font-family="Arial" font-weight="700">€27 trough</text>
+<text x="206" y="372" fill="#8C9BAA" font-size="7.5" font-family="Arial">mid-Dec 2025</text>
 </svg>
 </div>
 <div style="font-size:9.5px;color:#B0BBC6;line-height:1.6;margin-top:10px;">Price path: Google Finance 6M chart, Natural Gas EU (EUR/MWh), as of Apr 14 2026. Pre-crisis baseline €33.5 = Nov 1 2025 opening level. Qatar halt Mar 3: GS estimated −19% near-term global LNG supply. €63 peak confirmed via CNBC. US blockade declared Apr 12 after Iran-US talks collapsed. GS revised Apr-26 TTF forecast €55/MWh published Mar 3 2026. Current close €43.37, −6.57% on day.</div>
