@@ -20,7 +20,6 @@ The legal target is 90% by November 1 under EU Regulation 2022/1032. The EU Gas 
 <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:#1C2B3A;margin-bottom:3px;">EU Gas Storage — Start of Injection Season by Year</div>
 <div style="font-size:11px;color:#8C9BAA;margin-bottom:18px;">% of working capacity, April 1 each year · Source: GIE-AGSI, EIA, European Commission</div>
 <canvas id="c1" width="656" height="280" style="display:block;"></canvas>
-<div style="font-size:10px;color:#B0BBC6;margin-top:14px;line-height:1.5;">All figures sourced from GIE-AGSI registry or official EU/EIA publications. 2021: 31% (EIA, March 31 2021). 2022: 34% (EU Commission, April 1 2022). 2023: 56% (EIA, April 1 2023). 2024: 59% (EU Council, April 1 2024). 2025: 34% (EU Commission, April 1 2025). 2026: 29.55% (GIE-AGSI, April 14 2026, 334.35 TWh).</div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
@@ -46,7 +45,6 @@ Kpler's pre-Hormuz base case had EU-plus LNG imports reaching 145 mt in 2026, up
 <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:#4A5568;"><div style="width:12px;height:12px;border-radius:2px;background:#1C2B3A;flex-shrink:0;"></div>2026 Forecast</div>
 </div>
 <canvas id="c2" width="656" height="270" style="display:block;"></canvas>
-<div style="font-size:10px;color:#B0BBC6;margin-top:14px;line-height:1.5;">2025 actuals from Kpler: NW Europe 57.1 mt, Southern Europe 27.6 mt, Rest of EU-27 13.4 mt, UK &amp; Turkey 21.5 mt. Total 127 mt. 2026 forecasts: NW Europe 73.6 mt (+29% YoY), Southern Europe 34.6 mt (+25%), Rest of EU-27 15.0 mt (+12%), UK &amp; Turkey 19.5 mt (-9%). Total 145 mt. Pre-Hormuz disruption — subject to downward revision if Qatar LNG remains offline.</div>
 </div>
 
 <script>
@@ -122,7 +120,6 @@ The problem is structural, not uniform. Spain holds 40% of total EU LNG regasifi
 <text x="206" y="372" fill="#8C9BAA" font-size="7.5" font-family="Arial">mid-Dec 2025</text>
 </svg>
 </div>
-<div style="font-size:9.5px;color:#B0BBC6;line-height:1.6;margin-top:16px;padding-bottom:8px;">Price path: Google Finance 6M chart, Natural Gas EU (EUR/MWh), as of Apr 14 2026. Pre-crisis baseline €33.5 = Nov 1 2025 opening level. Qatar halt Mar 3: GS estimated −19% near-term global LNG supply. €63 peak confirmed via CNBC. US blockade declared Apr 12 after Iran-US talks collapsed. GS revised Apr-26 TTF forecast €55/MWh published Mar 3 2026. Current close €43.37, −6.57% on day.</div>
 </div>
 
 ## The View
