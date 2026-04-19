@@ -11,7 +11,7 @@ summary: "ERCOT's large-load queue hit 239 GW by end-2025, up 270% in one year. 
 
 ERCOT's large-load interconnection queue stood at 63 GW at the end of 2024. By end-2025 it was 239 GW. That is a 270% increase in twelve months, with 225 new large-load requests filed in 2025 alone versus 152 cumulative during 2022 to 2024. Data centers account for roughly 73% of the queue. This is not incremental growth. It is a structural repricing of the West Texas power market.
 
-The 2023 Enverus blog by Scott Bruns on ERCOT load growth and data center impact laid out the thesis clearly: data centers have already changed the price dynamics at HB_WEST by absorbing generation that previously exported out of the region. My comparison analysis against ERCOT's own board materials, the Potomac Economics IMM 2024 SOM, and PUCT filings confirms the core argument and sharpens it. The grid cannot absorb this demand on the current infrastructure timeline. Reserve margins go negative in 2028.
+The 2023 Enverus blog by Scott D Bruns on ERCOT load growth and data center impact laid out the thesis clearly: data centers have already changed the price dynamics at HB_WEST by absorbing generation that previously exported out of the region. My comparison analysis against ERCOT's own board materials, the Potomac Economics IMM 2024 SOM, and PUCT filings confirms the core argument and sharpens it. The grid cannot absorb this demand on the current infrastructure timeline. Reserve margins go negative in 2028.
 
 ![ERCOT Large-Load Queue Growth](/images/ercot-queue-growth.png)
 
