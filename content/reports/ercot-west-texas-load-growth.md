@@ -73,7 +73,7 @@ Meanwhile in Abilene, the Stargate/Crusoe data center campus has roughly 200 MW 
 
 ## The View
 
-West Texas is repricing structurally. The combination of 239 GW in the queue, 73% from data centers, negative reserve margins by 2028 in the base case, rising intra-zonal congestion, 5.3 TWh of curtailed generation, and 765-kV lines that do not arrive until 2031 points in one direction. This region will see higher average power prices, wider basis spreads, and more volatile pricing through the rest of the decade.
+West Texas is repricing structurally. The combination of 239 GW in the queue, 73% from data centers, negative reserve margins by 2028 in the base case, rising intra-zonal congestion, and 765-kV lines that do not arrive until 2031 points in one direction. This region will see higher average power prices, wider basis spreads, and more volatile pricing through the rest of the decade.
 
 The market is not pricing the full extent of this tightness yet. SB 6 implementation through 2026 will thin the queue by forcing de-duplication and real capital commitments, but it will not eliminate the structural demand growth. The Chevron-Microsoft FID decision is the near-term catalyst that determines whether 2028 to 2030 looks manageable or critical.
 
