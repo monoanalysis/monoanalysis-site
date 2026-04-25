@@ -16,7 +16,7 @@ export default function HomePage() {
             Est. 2026
           </div>
           */}
-          <h1>Independent Commodity Research &amp; Market Insights</h1>
+          <h1>Independent Energy Research &amp; Market Insights</h1>
           <p className="hero-desc">
             Data-driven analysis of energy, natural gas, and global trade flows. 
             Covering supply and demand fundamentals, market structure, and price dynamics.
