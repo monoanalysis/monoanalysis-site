@@ -57,7 +57,7 @@ export default function AboutPage() {
           failures cascade. That framework translates directly to commodity markets.
         </p>
         <p style={{ fontFamily: 'var(--serif)', fontSize: '1.02rem', lineHeight: 1.85 }}>
-          I cover natural gas, crude oil, power markets, agriculture, and metals.
+          I cover energy, natural gas, crude oil, power markets, agriculture, and metals.
           This site is where I publish independent research that reflects how I think about these markets.
         </p>
       </div>
@@ -67,7 +67,7 @@ export default function AboutPage() {
         <div className="section-label">Analytical Toolkit</div>
         <div className="skills-grid">
           {[
-             { title: 'Markets', items: 'Commodity futures, Options, Basis trading, Spread analysis' },
+            { title: 'Markets', items: 'Power, Energy, Natural Gas, Crude Oil' },
             { title: 'Risk Management', items: 'Credit, Operational, Regulatory, Derivatives' },
             { title: 'Data', items: 'Bloomberg Terminal, EIA, USDA, FRED, CFTC' },
           ].map((s, i) => (
