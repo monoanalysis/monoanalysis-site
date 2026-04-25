@@ -4,8 +4,8 @@ import Script from 'next/script';
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
-  title: 'Monu | Commodity Markets Analysis',
-  description: 'Independent commodity research and market insights on energy, agriculture, and global trade flows.',
+  title: 'Monu | Energy Markets Analysis',
+  description: 'Independent research on energy markets, natural gas, power, and global commodity dynamics.',
 };
 
 export default function RootLayout({ children }) {

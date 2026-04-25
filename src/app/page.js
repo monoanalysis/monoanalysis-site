@@ -18,8 +18,8 @@ export default function HomePage() {
           */}
           <h1>Independent Commodity Research &amp; Market Insights</h1>
           <p className="hero-desc">
-            Data-driven analysis of energy, agriculture, and global trade flows. 
-            Covering cross-commodity relationships, market structure, and price dynamics.
+            Data-driven analysis of energy, natural gas, and global trade flows. 
+            Covering supply and demand fundamentals, market structure, and price dynamics.
           </p>
           <p className="hero-desc">
           <div>

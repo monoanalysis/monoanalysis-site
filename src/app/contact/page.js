@@ -46,7 +46,7 @@ export default function ContactPage() {
         fontSize: '0.95rem', color: 'var(--ink-muted)',
         lineHeight: 1.7, marginBottom: '2.5rem'
       }}>
-        Interested in discussing commodity markets, potential collaborations,
+        Interested in discussing energy markets, potential collaborations,
         or have feedback on my research? Reach out below or connect on LinkedIn.
       </p>
 
