@@ -29,7 +29,7 @@ The bar chart above shows negative hours growing in lockstep with wind and solar
 
 Pearson r = 0.81. The relationship is not perfect because congestion and weather add noise year to year. The direction is unambiguous.
 
-Negative prices are not distributed randomly across the clock. They cluster between midnight and 5am in spring (March and April), when wind is strong and demand is at its lowest. That is the PTC mechanism in action.
+Negative prices are not distributed randomly across the clock. The heatmap shows two distinct clusters in spring: overnight hours (midnight to 5am) driven by wind, and midday hours (9am to 3pm) driven by solar. March and April are the worst months because wind and solar both peak while demand stays low.
 
 ![When Do Negative Prices Occur — Hourly Heatmap](/images/Negatice_Price_Hrs.png)
 
