@@ -27,7 +27,8 @@ The bar chart above shows negative hours growing in lockstep with wind and solar
 
 ![Correlation: Renewable Capacity vs Negative Price Hours](/images/Renewable-vs-Negative_Price_Hrs.png)
 
-Pearson r = 0.81. The relationship is not perfect because congestion and weather add noise year to year. The direction is unambiguous.
+Pearson r = 0.81, and the regression slope works out to roughly 9.1 additional negative hours per GW of renewable capacity added. The relationship is not perfect, since congestion and weather add noise year to year, but the direction is unambiguous.
+
 
 Negative prices are not distributed randomly across the clock. The heatmap shows two distinct clusters in spring: overnight hours (midnight to 5am) driven by wind, and midday hours (9am to 3pm) driven by solar. March and April are the worst months because wind and solar both peak while demand stays low.
 
