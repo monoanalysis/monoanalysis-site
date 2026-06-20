@@ -75,7 +75,7 @@ export default async function ReportPage({ params }) {
           borderTop: '1px solid #ddd', textAlign: 'center'
         }}>
           <p style={{ fontSize: '0.75rem', color: '#999' }}>
-            monuanalysis.com — Independent Commodity Research
+            Independent Energy Research & Market Insights
           </p>
         </div>
       </div>
