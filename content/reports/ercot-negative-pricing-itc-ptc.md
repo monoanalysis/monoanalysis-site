@@ -2,7 +2,7 @@
 title: "ERCOT Negative Pricing and the ITC/PTC Dynamic"
 subtitle: "How federal tax credits drive negative electricity prices in West Texas, and what the IRA's solar PTC election means for the market"
 date: "2026-06-20"
-tags: ["POWER"]
+tags: ["Power", "ERCOT", "Solar", "Wind", "ITC", "PTC"]
 featured: true
 summary: "Negative pricing at West Texas Hub is not a market anomaly. It is a policy outcome. The $28.6/MWh Production Tax Credit gives wind and now solar a structural bid below zero. As solar scales under the IRA's new PTC election, the problem compounds."
 ---
