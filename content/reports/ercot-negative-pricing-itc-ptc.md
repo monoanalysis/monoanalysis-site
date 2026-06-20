@@ -74,4 +74,4 @@ The data tells a straightforward story. Negative pricing at West Texas Hub is a 
 
 The IRA's solar PTC election changes the scale. ITC solar curtailed and held negative hours in check. PTC solar bids through the same price floor as wind, and the scenario analysis shows that 60% adoption of PTC solar at current buildout rates adds hundreds of negative price hours per year in West Texas alone.
 
-For developers, the NPV model is decisive. PTC is the better election at capacity factors above 22% when negative exposure stays below 12 to 15% of annual hours. West Texas is already at 5 to 8% and rising. That narrows the PTC advantage faster than most pro formas assume. The ITC election is not conservative. At high negative exposure, it is simply the higher NPV outcome.
+For developers, the NPV model is decisive. PTC is the better election at capacity factors above 22% when negative exposure stays below 12 to 15% of annual hours. West Texas is already at 2 to 5% and rising. That narrows the PTC advantage faster than most pro formas assume. The ITC election is not conservative. At high negative exposure, it is simply the higher NPV outcome.
