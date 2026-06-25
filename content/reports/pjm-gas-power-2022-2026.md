@@ -1,6 +1,6 @@
 ---
-title: "The Gas-Power Nexus in Appalachia: What MVP Did to PJM"
-subtitle: "PJM electricity demand is the single strongest predictor of Appalachian gas burn. The MVP in-service date is the structural break."
+title: "PJM Load Decides Appalachian Gas: A Structural Break After MVP"
+subtitle: "Daily demand explains 64% of Appalachian gas burn. After MVP, the fit got tighter, the swings got wider, and the price stopped mattering."
 date: "2026-06-24"
 tags: ["Gas", "Power"]
 featured: true
@@ -15,7 +15,7 @@ summary: "1,466 daily observations from June 2022 to June 2026. A simple regress
 
 ## The Setup
 
-The dataset is 1,466 daily observations covering PJM hourly generation aggregated to days, PJM daily demand, Henry Hub spot, and East-region weekly storage forward-filled to daily. The frame is what an EQT trader sitting in Appalachia needs to know about how PJM power demand translates into local gas takeaway. The MVP pipeline in-service date splits the sample into 734 pre-MVP days and 732 post-MVP days.
+The dataset is 1,466 daily observations covering PJM hourly generation aggregated to days, PJM daily demand, Henry Hub spot, and East-region weekly storage forward-filled to daily. The frame is how PJM power demand translates into Appalachian gas takeaway. The MVP pipeline in-service date splits the sample into 734 pre-MVP days and 732 post-MVP days.
 
 ## Demand Is The Signal
 
@@ -59,6 +59,6 @@ The Henry Hub scatter is the negative result that matters. The dispatch is on lo
 
 Pearson r = 0.115, R² = 0.013. In the full model the price coefficient is small and negative, consistent with a modest substitution effect at high prices that does not show up in the bivariate fit.
 
-## So-What For An EQT Trader
+## So-What For An Appalachian Gas Trader
 
-PJM daily demand at 6.99 Bcf/d average burn is the dominant short-term call on Appalachian gas. EQT produces roughly 5.5 Bcf/d. Watching PJM demand forecasts gives a real-time read on local takeaway. The summer-to-winter seasonal swing is 1.47 Bcf/d. After MVP, expect higher mean burn and wider daily swings. The trade is to use PJM load forecasts as a leading indicator, not Henry Hub.
+PJM daily demand at 6.99 Bcf/d average burn is the dominant short-term call on Appalachian gas. EQT produces roughly 5.5 Bcf/d, so PJM gas burn alone clears more than EQT's entire daily output on most days. Watching PJM demand forecasts gives a real-time read on local takeaway. The summer-to-winter seasonal swing is 1.47 Bcf/d. After MVP, expect higher mean burn and wider daily swings. The trade is to use PJM load forecasts as a leading indicator, not Henry Hub.
