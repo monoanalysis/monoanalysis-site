@@ -2,7 +2,7 @@
 title: "ERCOT and West Texas: 239 GW of Queue, Negative Margins by 2028"
 subtitle: "Data centers are repricing the Permian. The grid is not ready."
 date: "2026-04-19"
-tags: ["POWER"]
+tags: ["Power"]
 featured: true
 summary: "ERCOT's large-load queue hit 239 GW by end-2025, up 270% in one year. Data centers account for 73% of it. Reserve margins go negative in 2028 under the base case. West Texas is no longer a cheap power zone. It is becoming the most structurally constrained region in ERCOT."
 ---

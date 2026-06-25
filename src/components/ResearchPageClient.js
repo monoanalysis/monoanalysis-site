@@ -14,7 +14,8 @@ export default function ResearchPageClient({ reports }) {
   const [search, setSearch] = useState('');
 
   const filtered = reports.filter(r => {
-    const matchTag = activeTag === 'All' || r.tags?.includes(activeTag);
+    const matchTag = activeTag === 'All' ||
+      r.tags?.some(t => t?.toLowerCase() === activeTag.toLowerCase());
     const matchSearch = search === '' ||
       r.title.toLowerCase().includes(search.toLowerCase()) ||
       r.summary?.toLowerCase().includes(search.toLowerCase());
