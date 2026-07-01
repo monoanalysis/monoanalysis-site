@@ -17,43 +17,41 @@ summary: "A structural OLS on weekly Lower 48 storage change (Jul 2018 to May 20
 
 The dataset is 406 clean weekly observations from July 2018 to May 2026, pulled from EIA API v2. Target is net weekly change in Lower 48 working gas storage. Predictors are HDD, CDD, prior-week storage deviation from the 5-yr seasonal, dry gas production, LNG exports, power burn, and lagged Henry Hub spot.
 
-## Which Variables Move the Needle
+## Where Storage Sits Today
 
-![Variable importance](/images/gas_storage_variable_importance.png)
+![Full history](/images/gas_storage_full_history.png)
 
-Heating demand dominates at 23 pp of R². The next largest driver, dry gas production, contributes 1.3 pp. That gap is the story. Winter withdrawals and summer injections are weather trades first.
-
-## The Backtest
-
-![Actual vs predicted](/images/gas_storage_actual_vs_predicted.png)
-
-The model tracks turning points cleanly. Winter withdrawals and shoulder-season injections both land inside the confidence band on most weeks. The scatter shows the same story with less noise.
-
-![Scatter](/images/gas_storage_scatter.png)
-
-## The 2022 Structural Break
-
-![Pre vs post 2022](/images/gas_storage_pre_post_2022.png)
-
-Post-2022 coefficients tell a different market. LNG absolute sensitivity roughly doubled. CDD became a statistically significant driver. Power burn weakened as a marginal signal. The read is that Freeport, Sabine Pass, Corpus Christi, and Plaquemines are now the price-setting demand block, not domestic power.
+Latest weekly print is inside the 5-yr band but tracking the top edge of it.
 
 ## Ten Years of Extremes
 
 ![Historical extremes](/images/gas_storage_historical_extremes.png)
 
-The five largest withdrawals in the last decade all cluster in January and February. Winter Storm Uri in February 2021 pulled 338 Bcf in a single week. The January 2026 cold snap tied the 2018 Arctic event at 359 Bcf, the record. Every extreme move is a weather event.
+The five largest withdrawals in the last decade all cluster in January and February. Winter Storm Uri in February 2021 pulled 338 Bcf in a single week. The January 2026 cold snap tied the January 2018 Arctic event at 359 Bcf, the record.
+
+## Distribution of Weekly Changes
 
 ![Distribution of weekly changes](/images/gas_storage_distribution.png)
 
-The distribution is bimodal with a longer left tail. Injections cluster tightly around +60 to +90 Bcf. Withdrawals spread wider and reach further, reflecting the asymmetry of cold-driven demand shocks versus mild-weather injection seasons.
+Injections cluster tightly around +60 to +90 Bcf. Withdrawals spread wider and reach further. The record withdrawal is -359 Bcf, the record injection is +129 Bcf.
 
-## Where Storage Sits Today
+## Which Variables Move the Needle
 
-![Full history](/images/gas_storage_full_history.png)
+![Variable importance](/images/gas_storage_variable_importance.png)
 
-Latest weekly print is inside the 5-yr band but tracking the top edge. The forward projection uses 5-yr seasonal HDD/CDD as the baseline and rolls the model forward four weeks.
+Heating demand contributes 23 pp of R². The next largest driver, dry gas production, contributes 1.3 pp. LNG exports and power burn each contribute roughly 1 pp. CDD, price, and storage deviation each contribute under 0.3 pp.
+
+## The 2022 Structural Break
+
+![Pre vs post 2022](/images/gas_storage_pre_post_2022.png)
+
+Post-2022 the LNG coefficient is meaningfully larger in absolute terms, CDD became statistically significant, and power burn weakened. LNG exports are now the marginal demand source the storage balance keys off.
+
+## Forward Projection
 
 ![Forward projection](/images/gas_storage_forward_projection.png)
+
+Rolling the model forward four weeks from the latest print using 5-yr seasonal HDD and CDD produces the injection path shown above. A custom hot-weather scenario (HDD 12, CDD 85 the following week; HDD 10, CDD 92 the week after) projected +97.8 Bcf and +95.2 Bcf respectively, with 95% prediction intervals of roughly ±85 Bcf.
 
 ## Limitations
 
@@ -61,4 +59,4 @@ Monthly EIA series (production, LNG, power burn) lag by two months, so this is n
 
 ## The View
 
-The model isolates weather as the single dominant driver of weekly storage and confirms that the 2022 LNG buildout structurally repriced the demand side. The next iteration swaps monthly supply series for daily pipeline proxies to turn this from a structural explainer into a live nowcast.
+Forward path through the injection season points to storage staying at the upper edge of the 5-yr band under normal weather, with a 95% band of roughly ±85 Bcf per week. A hot CDD scenario pulls the trajectory back inside the band as power burn absorbs injections. Winter is where the model's edge matters most: heating demand drives the tail risk on both sides.
