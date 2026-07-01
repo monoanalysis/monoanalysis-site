@@ -55,8 +55,8 @@ Rolling the model forward four weeks from the latest print using 5-yr seasonal H
 
 ## Limitations
 
-Monthly EIA series (production, LNG, power burn) lag by two months, so this is not a real-time nowcast. Price is included at a one-week lag. Mild multicollinearity between production and LNG.
+Production, LNG, and power burn data comes from monthly EIA reports that lag by about two months, so the model uses stale supply numbers. Price uses last week's value, so real-time price spikes are not captured. Extreme cold weeks like Winter Storm Uri fit worse than normal weeks. Production and LNG tend to move together in the data, which makes it harder to separate their individual effects.
 
 ## The View
 
-Forward path through the injection season points to storage staying at the upper edge of the 5-yr band under normal weather, with a 95% band of roughly ±85 Bcf per week. A hot CDD scenario pulls the trajectory back inside the band as power burn absorbs injections. Winter is where the model's edge matters most: heating demand drives the tail risk on both sides.
+Under the hot-weather scenario (HDD 12, CDD 85 next week, then HDD 10, CDD 92), the model projects +97.8 Bcf and +95.2 Bcf, moving implied storage from 2,835 Bcf to 3,028 Bcf by July 3, a 6.8% two-week build. The 95% prediction band is ±82 Bcf per week. That is wide enough that one hot CDD surprise can flip a triple-digit injection into a sub-50 number. The tail risk is not the summer. It is the first cold week of November, when the model's HDD coefficient of -1.79 turns every incremental HDD into 1.79 Bcf of withdrawal.
