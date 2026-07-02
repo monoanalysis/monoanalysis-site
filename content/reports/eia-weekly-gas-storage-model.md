@@ -10,7 +10,7 @@ summary: "A structural OLS on 382 weekly observations (Jan 2019 to May 2026) usi
 ## Three Things to Know
 
 1. R² is 0.978 across 382 weekly observations. Walk-forward MAE is 12.1 Bcf. Directional hit rate is 98.2%. The 95% prediction interval is ±32 Bcf, roughly one-third the historical weekly standard deviation.
-2. Heating demand carries the model. HDD t-stat is -67.3, an order of magnitude larger than any other variable. Cold weeks pull storage down harder than any other signal in the panel.
+2. Heating demand carries the model. Every additional heating-degree day pulls roughly 1.5 Bcf out of the weekly balance, and no other variable comes close to that force. Winter withdrawals are a pure weather trade.
 3. Post-2022, LNG exports moved from a secondary driver to the marginal demand block. Every incremental Bcf/d of LNG flow now pulls 8.3 Bcf out of the weekly balance.
 
 ## The Setup
@@ -63,4 +63,4 @@ Production and LNG data come from monthly EIA reports that lag by about two mont
 
 ## The View
 
-Tomorrow's print is the first live test at the current data spec. A +96.5 Bcf call is roughly 30 Bcf above the 5-year seasonal for late June, driven by real power-burn strength captured in the EIA-930 hourly stream. If the actual lands inside the ±30 Bcf band, the framework holds as a Wednesday-night nowcast. The next unlock is daily production and LNG feedgas data. Everything else is already close to real-time.
+The model calls +96.5 Bcf tomorrow and +79.8 Bcf the following Thursday, building storage from 2,835 to 3,011 Bcf. The reason the forecast holds is that hourly grid generation is picking up power burn in near-real-time, which is where most of the injection-season variance actually sits. Tomorrow's release is the first honest test. If it lands inside the band, the framework is ready to run every Wednesday night.
