@@ -1,48 +1,44 @@
 ---
 title: "The Great Fuel Shift: America's Changing Electricity Mix"
-subtitle: "Coal fell from 51% of US generation to 16%. Gas took the lead at 40.5%. Wind and solar are the only fuels still growing fast. Two EIA datasets, 2001 to 2026."
+subtitle: "Coal fell from 51% of US generation to 16%. Gas took the lead at 40.5%. Wind and solar reached 17.7% combined. EIA data, 2001 to 2026."
 date: "2026-07-08"
 tags: ["Power", "Gas"]
 featured: true
-summary: "A read of US net electricity generation from EIA Monthly Energy Review Table 7.2a, January 2001 to March 2026. Coal's share fell by two-thirds. Natural gas nearly tripled to 40.5% and holds the lead. Wind and solar reached 17.7% combined and hold the only fast growth rates left. Seasonal patterns show gas peaking in summer and solar concentrated from spring to early fall."
+summary: "A read of US net electricity generation from EIA Monthly Energy Review Table 7.2a, January 2001 to March 2026. Coal's share fell by two-thirds while natural gas nearly tripled to 40.5% and took the lead. Wind and solar reached 17.7% combined, now level with nuclear. The report covers the fuel mix, the crossovers, growth rates by fuel, seasonal peaks and troughs, and what replaced coal."
 ---
 
-## Three Things to Know
+The US electricity mix reordered between 2001 and 2026. Coal fell from 51% of generation to 16%. Natural gas rose from 17% to 40.5% and took the lead. Wind and solar reached 17.7% combined, now level with nuclear.
 
-1. Coal supplied 51% of US electricity in 2007. It supplies 16% now. Natural gas made the opposite move, from 17% to 40.5%, and holds the lead.
-2. Wind and solar together reached 17.7%, level with nuclear. They hold the only fast growth rates left in the mix. Solar compounded at 27% over the last five years.
-3. Total generation sat flat near 340 TWh per month for two decades. That changed around 2021. Electrification and data center demand now lift the whole stack.
-
-## The Stack Rearranged
+## US Electricity Generation by Fuel
 
 ![US generation by fuel](/images/fuel_shift_generation_stack.png)
 
-The coal band shrinks from the widest slice to a thin one. Gas absorbs most of the exit. Wind and solar absorb the rest, plus the new demand stacked on top. Nuclear barely changes width in 25 years.
-
-## The Cleanest View of the Shift
-
-![Share of generation by fuel](/images/fuel_shift_share_lines.png)
-
-Coal peaked at 51% in 2007 and now sits at 16.0%, its lowest in the record. Gas rose from 17% to 40.5% on an almost exact inverse. Wind and solar climb in a near-straight line. Nuclear holds a flat 18% across the whole chart. The 2025 uptick in coal, and dip in gas, follows higher Henry Hub prices that made some plants switch back to coal, alongside delayed coal retirements.
+The coal band shrinks from the widest slice to a thin one. Gas widens to fill most of that gap. Wind and solar widen too, absorbing the rest and the new demand that arrived after 2021 as electrification and data center load lifted the whole stack. Nuclear barely changes width across 25 years.
 
 ## The Crossovers
 
 ![The crossovers](/images/fuel_shift_crossovers.png)
 
-Gas passed coal in January 2016. Wind and solar passed hydro in February 2017 and passed coal in September 2024. The pace differs. Gas ground past coal over a decade. Wind and solar crossed coal quickly, against a share that was already falling.
+Gas passed coal in January 2016. Wind and solar passed hydro in February 2017, then passed coal in September 2024. Gas ground past coal over a decade. Wind and solar crossed coal quickly, against a share that was already falling. Wind and solar now sit level with nuclear at 17.7%.
 
-## Growth Points to the Next Decade
+## Growth by Fuel
 
 ![Generation CAGR by fuel](/images/fuel_shift_cagr.png)
 
-Solar compounded at 53.7% in the 2010s and still grew 27.1% over the last five years. Wind slowed to 6.6%. Gas flattened to 2.1%, now growing with demand rather than taking coal's place. Coal, nuclear, and hydro are flat to negative in every window.
+Solar compounded at 53.7% in the 2010s and still grew 27.1% over the last five years. Wind slowed to 6.6%. Gas flattened to 2.1%, now growing with demand rather than taking coal's place. Coal, nuclear, and hydro are flat to negative across every window.
 
-## Season by Season
+## Peak and Trough Months by Fuel
 
-![Seasonal generation heatmaps](/images/fuel_shift_seasonal_heatmaps.png)
+![Peak and trough months](/images/fuel_shift_peak_trough.png)
 
-Each fuel has a season. Gas runs hottest from June to August, its share swinging roughly 10 points, from the low 30s in spring to the mid 40s in summer as air conditioning load climbs. Solar concentrates from April to September and stays dim in winter, a pattern set by daylight. Wind leans mildly toward the shoulder seasons. Coal is the inverse of gas, losing share in every month and every year, with winter months holding on longest.
+Each fuel concentrates its output in different months. Gas peaks in July and August and troughs in spring, tracking air conditioning load. Solar peaks from May to August and thins to its lowest in December and January. Wind runs highest in spring and late fall and dips in mid-summer. Hydro peaks in late spring on snowmelt. Coal leans on summer and winter. Nuclear stays steadier than the rest, easing only in the spring and fall maintenance windows.
 
-## What the Data Shows
+## Who Replaced Coal
 
-The mix reordered in one direction. Coal fell in every season and every year of the record. Gas replaced most of it and now leads. Wind and solar filled the rest and carry the only durable growth left. Two crossovers remain close on the current path: wind and solar against nuclear, and solar against wind. The direction is set by the growth rates already in the data.
+Gas took most of the ground coal gave up. Its rise from 17% to 40.5% is close to the inverse of coal's fall from 51% to 16%. Wind and solar took the rest, climbing from near zero to 17.7% combined. The 2025 tick up in coal, and dip in gas, followed higher Henry Hub prices and delayed retirements, not a change in trend.
+
+## Future Share of Generation
+
+![Fuel shares with STEO forecast to 2027](/images/fuel_shift_forecast.png)
+
+The EIA Short-Term Energy Outlook extends the mix to 2027. Gas holds the lead at 39.8%. Coal keeps falling to 14.8% and drops below nuclear, which stays flat at 17.8%. Wind rises to 11.6% and solar to 9.4%, the two fastest movers in the forecast. Together they reach 21% by 2027, moving past nuclear. Solar closes toward wind but does not pass it inside the window.
