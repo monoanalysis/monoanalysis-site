@@ -44,3 +44,7 @@ Coal lost 31.9 points of share between 2007 and 2025. Gas took the largest piece
 ![Fuel shares with STEO forecast to 2027](/images/fuel_shift_forecast.png)
 
 The EIA Short-Term Energy Outlook extends the mix to 2027. Gas holds the lead at 39.8%. Coal keeps falling to 14.8% and drops below nuclear, which stays flat at 17.8%. Wind rises to 11.6% and solar to 9.4%, the two fastest movers in the forecast. Together they reach 21% by 2027, moving past nuclear. Solar closes toward wind but does not pass it inside the window.
+
+## The Bottom Line
+
+The mix moved in one direction across the whole record. Coal gave up 31.9 points of share since 2007, and gas took most of that ground while wind and solar took the rest. Gas now leads at about 40% and the forecast holds it there through 2027. Nuclear stayed flat the entire time, near 18%. The only fuels still growing fast are wind and solar, and the STEO carries them to 21% combined by 2027, past nuclear and past coal. On the data through this forecast window, gas holds the top and renewables take the next tier.
