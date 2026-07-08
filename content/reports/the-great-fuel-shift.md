@@ -9,6 +9,12 @@ summary: "A read of US net electricity generation from EIA Monthly Energy Review
 
 The US electricity mix reordered between 2001 and 2026. Coal fell from 51% of generation to 16%. Natural gas rose from 17% to 40.5% and took the lead. Wind and solar reached 17.7% combined, now level with nuclear.
 
+## Three Things to Know
+
+1. Coal lost 31.9 points of share since 2007. Gas took the largest piece, gaining 19.2 points, and now leads the mix near 40%.
+2. Wind and solar reached 17.7% combined, level with nuclear, and hold the only fast growth rates left. Solar still grew 27.1% over the last five years.
+3. The EIA Short-Term Energy Outlook carries the mix to 2027 with gas holding at 39.8%, coal falling to 14.8% below nuclear, and wind and solar reaching 21% combined.
+
 ## US Electricity Generation by Fuel
 
 ![US generation by fuel](/images/fuel_shift_generation_stack.png)
