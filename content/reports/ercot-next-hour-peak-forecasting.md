@@ -48,7 +48,7 @@ Hourly ERCOT electricity-demand data was collected from the U.S. Energy Informat
 
 ## Model Performance
 
-The model was tested and validated using 2026 data through August.
+The model was tested and validated using 2026 data through September.
 
 ```
 PERIOD: 2026-08-01 00:00:00  ->  2026-09-13 23:00:00   (1,056 hours)
