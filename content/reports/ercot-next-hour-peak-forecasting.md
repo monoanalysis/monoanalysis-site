@@ -11,10 +11,10 @@ summary: "A neural network predicts whether the next hour will be a peak hour in
 
 1. Predicting peak hours to curtail during systemwide high demand to save transmission cost
 2. This model predicts whether the next hour will be a peak hour using five years of historical ERCOT demand data.
-3. The model achieved: ( On training data )
+3. The model achieves:
    * 99.4% accuracy
-   * 96.7% precision: Of all the hours flagged as peak hours, 96.7% were actually peak hours.
-   * 72.4% recall: The model successfully identified 72.4% of all actual peak hours.
+   * 96.7% precision: Of all the hours flagged as peak hours, 96.7% are actually peak hours.
+   * 72.4% recall: The model identifies 72.4% of all actual peak hours.
 
 ## Why This Model?
 
@@ -22,11 +22,11 @@ Transmission costs depend on how much electricity a customer uses when demand ac
 
 This model predicts the probability that the next hour will be a peak hour in ERCOT.
 
-## How Was It Done?
+## How Is It Done?
 
 ### Data
 
-Hourly ERCOT electricity-demand data was collected from the U.S. Energy Information Administration (EIA) for 2020 through 2025.
+Hourly ERCOT electricity-demand data is collected from the U.S. Energy Information Administration (EIA) for 2020 through 2026.
 
 ### Assumptions
 
@@ -48,7 +48,7 @@ Hourly ERCOT electricity-demand data was collected from the U.S. Energy Informat
 
 ## Model Performance
 
-The model was tested and validated using 2026 data through September.
+The model is tested and validated on 2026 data through September.
 
 ![Next-hour peak detection, 2026](/images/ercot-peak-threshold-tradeoff.png)
 
