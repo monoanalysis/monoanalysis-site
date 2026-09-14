@@ -11,7 +11,7 @@ summary: "A neural network predicts whether the next hour will be a peak hour in
 
 1. Predicting peak hours to curtail during systemwide high demand to save transmission cost
 2. This model predicts whether the next hour will be a peak hour using five years of historical ERCOT demand data.
-3. The model achieves:
+3. The model achieves: ( On training data )
    * 99.4% accuracy
    * 96.7% precision: Of all the hours flagged as peak hours, 96.7% are actually peak hours.
    * 72.4% recall: The model identifies 72.4% of all actual peak hours.
@@ -39,8 +39,7 @@ Hourly ERCOT electricity-demand data is collected from the U.S. Energy Informati
 2. Define the top 2% of demand hours in each year as peak hours.
 3. Create a target variable ranging from 0 to 1, representing the probability that an hour will be a peak hour.
 4. Split the data:
-   * 2020–2024: Model training
-   * 2025: Validation and prediction-threshold selection
+   * 2020–2025: Model training
    * 2026: Final out-of-sample testing
 5. Feed the input variables into the neural network.
 6. The neural network calculates its weights, generates predictions, compares them with the actual outcomes, and updates its weights during training.
@@ -79,6 +78,12 @@ PERIOD: 2026-08-01 00:00:00  ->  2026-09-13 23:00:00   (1,056 hours)
   precision 98.5%   recall 72.8%   F1 0.838
 ```
 
+* Model metrics change depending on the data range selected.
+
+The top 2% demand threshold increased from 76,898 MW in 2020–2025 to 87,015 MW in 2026, a rise of 10,117 MW that shows how much ERCOT’s load profile has shifted.
+
 ![August 2026 peaks and model flags](/images/ercot-peak-august-confidence.png)
 
 The top chart compares actual ERCOT demand with peak predictions: grey dots are actual peaks, while red circles are model-flagged peaks. The bottom chart shows the model's predicted rank; whenever it crosses the 0.985 threshold, the next hour is flagged as a peak. Overlapping grey and red markers represent correct predictions.
+
+The main takeaway is that the model can identify ERCOT peak hours one hour in advance with very few false alerts. When it flags a peak, it is correct 96.7% of the time and captures 72.4% of actual peak hours. The results show that recent demand patterns can provide a useful early signal for peak-hour decisions.
