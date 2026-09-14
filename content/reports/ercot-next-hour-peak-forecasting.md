@@ -52,6 +52,19 @@ The model is tested and validated on 2026 data through September.
 
 ![Next-hour peak detection, 2026](/images/ercot-peak-threshold-tradeoff.png)
 
+The chart shows how changing the prediction threshold affects model performance. Lower thresholds catch more peak hours but create more false alarms, while higher thresholds improve precision but miss more actual peaks.
+
+* Precision: How often a peak warning is correct.
+`Precision = TP / (TP + FP)`
+* Recall: How many actual peaks the model catches.
+`Recall = TP / (TP + FN)`
+* F1 score: Balance between precision and recall.
+`F1 = 2 × (Precision × Recall) / (Precision + Recall)`
+
+TP = correctly predicted peak, FP = false peak warning, FN = missed peak.
+
+## Results
+
 ```
 PERIOD: 2026-08-01 00:00:00  ->  2026-09-13 23:00:00   (1,056 hours)
   demand range      : 53,900 - 90,741 MW
@@ -67,3 +80,5 @@ PERIOD: 2026-08-01 00:00:00  ->  2026-09-13 23:00:00   (1,056 hours)
 ```
 
 ![August 2026 peaks and model flags](/images/ercot-peak-august-confidence.png)
+
+The top chart compares actual ERCOT demand with peak predictions: grey dots are actual peaks, while red circles are model-flagged peaks. The bottom chart shows the model's predicted rank; whenever it crosses the 0.985 threshold, the next hour is flagged as a peak. Overlapping grey and red markers represent correct predictions.
