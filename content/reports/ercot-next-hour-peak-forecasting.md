@@ -50,6 +50,8 @@ Hourly ERCOT electricity-demand data was collected from the U.S. Energy Informat
 
 The model was tested and validated using 2026 data through September.
 
+![Next-hour peak detection, 2026](/images/ercot-peak-threshold-tradeoff.png)
+
 ```
 PERIOD: 2026-08-01 00:00:00  ->  2026-09-13 23:00:00   (1,056 hours)
   demand range      : 53,900 - 90,741 MW
