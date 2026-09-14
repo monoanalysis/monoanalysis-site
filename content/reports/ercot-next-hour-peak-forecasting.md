@@ -47,6 +47,7 @@ Hourly ERCOT electricity-demand data is collected from the U.S. Energy Informati
 
 ## Model Performance
 
+
 The model is tested and validated on 2026 data through September.
 
 ![Next-hour peak detection, 2026](/images/ercot-peak-threshold-tradeoff.png)
@@ -85,5 +86,7 @@ The top 2% demand threshold increased from 76,898 MW in 2020–2025 to 87,015 MW
 ![August 2026 peaks and model flags](/images/ercot-peak-august-confidence.png)
 
 The top chart compares actual ERCOT demand with peak predictions: grey dots are actual peaks, while red circles are model-flagged peaks. The bottom chart shows the model's predicted rank; whenever it crosses the 0.985 threshold, the next hour is flagged as a peak. Overlapping grey and red markers represent correct predictions.
+
+## Concluding Remarks
 
 The main takeaway is that the model can identify ERCOT peak hours one hour in advance with very few false alerts. When it flags a peak, it is correct 96.7% of the time and captures 72.4% of actual peak hours. The results show that recent demand patterns can provide a useful early signal for peak-hour decisions.
